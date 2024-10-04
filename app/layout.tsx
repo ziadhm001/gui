@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'ZOAZ Team',
-  description: 'Created By ZOAZ team for Computer Interface course.',
+  title: 'Linkers',
+  description: 'NASA Space Apps 2024 - Linkers.',
 }
 
 export default function RootLayout({

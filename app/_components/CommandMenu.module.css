@@ -1,0 +1,36 @@
+/* CommandMenu.module.css */
+
+.spaceText {
+    display: inline-block;
+    font-size: 2rem;
+    opacity: 0;
+    transform: scale(0.1) translateY(-1000px);
+    animation: spaceIn 1s ease-out forwards, colorChange 3s linear forwards; /* Apply two animations */
+  }
+  
+  /* Zoom-in animation */
+  @keyframes spaceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.1) translateY(-1000px); /* Start far away */
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.5) translateY(-200px); /* Zoom in and approach */
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) translateY(0); /* Final position */
+    }
+  }
+  
+  /* Color change animation */
+  @keyframes colorChange {
+    0% {
+      color: #ec4899; /* Start with pink-400 */
+    }
+    100% {
+      color: #ffffff; /* End with red-600 */
+    }
+  }
+  
